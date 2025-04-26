@@ -18,24 +18,24 @@ public class Repetició_2_1 {
 	        while (puntos != 3 && puntos2 != 3) {
 	            int num = (int)(Math.random() * 3) + 1; 
 
-	            System.out.print("Indicate your selection [1=Rock, 2=Paper, 3=Scissors] (press 9 to exit): ");
+	            System.out.print("Indica tu elección [1=Piedra, 2=Papel, 3=Tijeras] (pulsa 9 para salir): ");
 	            num2 = jc.nextInt();
 
 	            if (num2 == 9) {
-	                System.out.println("Exiting the game...");
+	                System.out.println("Saliendo del juego...");
 	                break;
 	            }
 
-	            System.out.print("The rival chose: ");
+	            System.out.print("Tu rival ha elegido: ");
 	            switch (num) {
 	                case 1:
-	                    System.out.println("Rock");
+	                    System.out.println("Piedra");
 	                    break;
 	                case 2:
-	                    System.out.println("Paper");
+	                    System.out.println("Papel");
 	                    break;
 	                case 3:
-	                    System.out.println("Scissors");
+	                    System.out.println("Tijeras");
 	                    break;
 	            }
 
@@ -43,15 +43,15 @@ public class Repetició_2_1 {
 	                case 1:
 	                    switch (num2) {
 	                        case 1:
-	                            System.out.println("It's a draw!");
+	                            System.out.println("Es un empate!");
 	                            empates++;
 	                            break;
 	                        case 2:
-	                            System.out.println("You win!");
+	                            System.out.println("Tú ganas"!");
 	                            puntos++;
 	                            break;
 	                        case 3:
-	                            System.out.println("Your rival wins!");
+	                            System.out.println("Tu rival gana!");
 	                            puntos2++;
 	                            break;
 	                    }
@@ -59,15 +59,15 @@ public class Repetició_2_1 {
 	                case 2:
 	                    switch (num2) {
 	                        case 1:
-	                            System.out.println("Your rival wins!");
+	                            System.out.println("Tu rival gana!");
 	                            puntos2++;
 	                            break;
 	                        case 2:
-	                            System.out.println("It's a draw!");
+	                            System.out.println("Es un empate!");
 	                            empates++;
 	                            break;
 	                        case 3:
-	                            System.out.println("You win!");
+	                            System.out.println("Tú ganas!");
 	                            puntos++;
 	                            break;
 	                    }
@@ -75,37 +75,37 @@ public class Repetició_2_1 {
 	                case 3:
 	                    switch (num2) {
 	                        case 1:
-	                            System.out.println("You win!");
+	                            System.out.println("Tú ganas!");
 	                            puntos++;
 	                            break;
 	                        case 2:
-	                            System.out.println("Your rival wins!");
+	                            System.out.println("Tu rival gana!");
 	                            puntos2++;
 	                            break;
 	                        case 3:
-	                            System.out.println("It's a draw!");
+	                            System.out.println("Es un empate!");
 	                            empates++;
 	                            break;
 	                    }
 	                    break;
 	            }
 
-	            System.out.println("Your rival has " + puntos2 + " points");
-	            System.out.println("You have " + puntos + " points");
+	            System.out.println("Tu rival tiene " + puntos2 + " puntos");
+	            System.out.println("Tú tienes " + puntos + " puntos");
 	            System.out.println();
 	        }
 
 	        if (puntos == 3) {
-	            System.out.println("Congratulations! You won the game!");
+	            System.out.println("Enhorabuena! Has ganado el juego!");
 	        } else if (puntos2 == 3) {
-	            System.out.println("Your rival won the game. Better luck next time!");
+	            System.out.println("Tu rival ha ganado el juego. Mejor suerte a la próxima!");
 	        }
 
 	        //canvi exercici git
-	        System.out.println("\n--- Final Statistics ---");
-	        System.out.println("Your points: " + puntos);
-	        System.out.println("Rival points: " + puntos2);
-	        System.out.println("Draws: " + empates);
+	        System.out.println("\n--- Estadísticas finales ---");
+	        System.out.println("Tus puntos: " + puntos);
+	        System.out.println("Puntos del rival: " + puntos2);
+	        System.out.println("Empates: " + empates);
 
 	        jc.close();
 	    }
