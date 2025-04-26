@@ -47,7 +47,7 @@ public class Repetició_2_1 {
 	                            empates++;
 	                            break;
 	                        case 2:
-	                            System.out.println("Tú ganas"!");
+	                            System.out.println("Tú ganas!");
 	                            puntos++;
 	                            break;
 	                        case 3:
